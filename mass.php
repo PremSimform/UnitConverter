@@ -25,8 +25,7 @@ if (isset($_POST["submit"])) {
             $result = $uni;
             break;
     }
-    // echo $result;
-}
+ }
 ?>
 <!DOCTYPE html>
 <html lang="en">
