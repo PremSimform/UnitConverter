@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include("currency-array.php");
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -84,7 +87,6 @@
                         <select class="form-control from" id="sel1">
 
                             <?php
-                            include ("currency-array.php");
                             foreach ($cur as $value) {
                                 echo "<option value= '$value'>$value";
                             }
@@ -102,7 +104,7 @@
                         </div>
                         <select class="form-control to" id="sel2">
                             <?php
-                            include ("currency-array.php");
+
                             foreach ($cur as $value) {
                                 echo "<option value= '$value'>$value";
                             }

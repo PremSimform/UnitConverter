@@ -29,6 +29,12 @@ $(document).ready(function () {
 		});
 	}
 	setTimeout(function () { test(); });
+	let path = window.location.pathname.split("/").pop();
+	if (path == '') {
+		path = 'index.html';
+	}
+	let target = $('#navbarSupportedContent ul li a[href="' + path + '"]');
+	target.parent().addClass('active');
 });
 $(window).on('resize', function () {
 	setTimeout(function () { test(); }, 500);
@@ -36,12 +42,4 @@ $(window).on('resize', function () {
 $(".navbar-toggler").click(function () {
 	$(".navbar-collapse").slideToggle(300);
 	setTimeout(function () { test(); });
-});
-jQuery(document).ready(function ($) {
-	let path = window.location.pathname.split("/").pop();
-	if (path == '') {
-		path = 'index.html';
-	}
-	let target = $('#navbarSupportedContent ul li a[href="' + path + '"]');
-	target.parent().addClass('active');
 });
