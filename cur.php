@@ -84,9 +84,7 @@
                         <select class="form-control from" id="sel1">
 
                             <?php
-                            $cur = array(
-                                "USD", "AED", "ARS", "AUD", "BGN", "BRL", "BSD", "BGN", "BRL", "BSD", "CAD", "CHF", "CLP", "CNY", "COP", "CZK", "DKK", "DOP", "EGP", "EUR", "FJD", "GBP", "GTQ", "HKD", "HRK", "HUF", "IDR", "ILS", "INR", "ISK", "JPY", "KRW", "KZT", "MVR", "MXN", "MYR", "NOK", "NZD", "PAB", "PEN", "PHP", "PKR", "PLN", "PYG", "RON", "RUB", "SAR", "SEK", "SGD", "THB", "TRY", "TWD", "UAH", "UYU", "ZAR"
-                            );
+                            include ("currency-array.php");
                             foreach ($cur as $value) {
                                 echo "<option value= '$value'>$value";
                             }
@@ -104,9 +102,7 @@
                         </div>
                         <select class="form-control to" id="sel2">
                             <?php
-                            $cur = array(
-                                "USD", "AED", "ARS", "AUD", "BGN", "BRL", "BSD", "BGN", "BRL", "BSD", "CAD", "CHF", "CLP", "CNY", "COP", "CZK", "DKK", "DOP", "EGP", "EUR", "FJD", "GBP", "GTQ", "HKD", "HRK", "HUF", "IDR", "ILS", "INR", "ISK", "JPY", "KRW", "KZT", "MVR", "MXN", "MYR", "NOK", "NZD", "PAB", "PEN", "PHP", "PKR", "PLN", "PYG", "RON", "RUB", "SAR", "SEK", "SGD", "THB", "TRY", "TWD", "UAH", "UYU", "ZAR"
-                            );
+                            include ("currency-array.php");
                             foreach ($cur as $value) {
                                 echo "<option value= '$value'>$value";
                             }
