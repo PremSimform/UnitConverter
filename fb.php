@@ -94,12 +94,7 @@
                         $from = $_POST["email"];
                         $header = "From : $from";
                         $a = 'mt-5';
-                        if (mail($to, $sub, $msg, $header)) {
-                            $counter = 1;
-                        } else {
-                            $counter = 0;
-                        }
-
+                        $counter = mail($to, $sub, $msg, $header) ? 1 : 0;
                         if ($counter == 1) {
                     ?>
                             <div class="alert alert-success mt-5 text-center" role="alert">
