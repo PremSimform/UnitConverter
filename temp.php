@@ -97,7 +97,7 @@ if (isset($_POST["submit"])) {
             </div>
         </nav>
         <div id="form">
-            <form style="width: 80%;" action="#" method="POST">
+            <form action="#" method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="input1">From</label>
