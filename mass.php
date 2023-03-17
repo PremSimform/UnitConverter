@@ -115,7 +115,6 @@ if (isset($_POST["submit"])) {
                             <option id="ton" value="Ton" <?php if (isset($unit1)) {
                                                                 if ($unit1 == 'Ton') echo "selected";
                                                             } ?>>Ton</option>
-                            x
                         </select>
                     </div>
                 </div>
