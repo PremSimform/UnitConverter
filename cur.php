@@ -88,7 +88,8 @@ include("currency-array.php");
 
                             <?php
                             foreach ($cur as $value) {
-                                echo "<option value= '$value'>$value";
+                                echo "<option value='$value'>$value</option>";
+
                             }
 
                             ?>
@@ -106,7 +107,8 @@ include("currency-array.php");
                             <?php
 
                             foreach ($cur as $value) {
-                                echo "<option value= '$value'>$value";
+                                echo "<option value='$value'>$value</option>";
+
                             }
 
                             ?>
@@ -128,7 +130,7 @@ include("currency-array.php");
 
         <div id="finalAmount" class="text-center">
             <h2>Converted Amount :
-                <span class="finalValue" style="color:green;">
+                <span class="finalValue">
                 </span>
             </h2>
         </div>

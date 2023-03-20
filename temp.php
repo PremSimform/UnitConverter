@@ -38,6 +38,9 @@ if (isset($_POST["submit"])) {
     <title>Temprature Converter</title>
     <link rel="icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./wp.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -49,9 +52,9 @@ if (isset($_POST["submit"])) {
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+        <!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css"> -->
     </head>
 
     <body>
@@ -101,7 +104,10 @@ if (isset($_POST["submit"])) {
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="input1">From</label>
-                        <input type="number" class="form-control" id="input1" name="input1" placeholder="Enter Number" value="<?php if (isset($input1)) echo $input1; ?>">
+                        <!-- <input type="number" class="form-control" id="input1" name="input1" placeholder="Enter Number" value="<?php if (isset($input1)) echo $input1; ?>"> -->
+                        <input type="number" class="form-control" id="input1" name="input1" placeholder="Enter Number" value="<?php echo isset($input1) ? $input1 : ''; ?>">
+
+
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputunit1">Unit</label>
